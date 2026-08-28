@@ -1,0 +1,272 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #fff8ed,
+        #f3f6ff
+    );
+
+    min-height: 100vh;
+}
+
+.page {
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 25px;
+}
+
+.card {
+    width: 100%;
+    max-width: 700px;
+
+    background: white;
+
+    text-align: center;
+
+    padding: 40px 25px;
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 10px 35px
+        rgba(0, 0, 0, 0.12);
+}
+
+.siblings {
+    font-size: 65px;
+
+    animation: move 2s infinite ease-in-out;
+}
+
+@keyframes move {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-7px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+h1 {
+    color: #8a5a35;
+}
+
+h2 {
+    color: #555;
+}
+
+p {
+    color: #666;
+
+    line-height: 1.8;
+
+    font-size: 16px;
+}
+
+.big-text {
+    font-size: 20px;
+}
+
+button {
+    border: none;
+
+    background: #9a6a42;
+
+    color: white;
+
+    padding: 13px 22px;
+
+    margin: 10px;
+
+    border-radius: 25px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+
+/* MEMORY PHOTO */
+
+.memory-box {
+    margin: 25px auto;
+}
+
+.memory-box img {
+
+    width: 100%;
+
+    max-width: 500px;
+
+    height: 420px;
+
+    object-fit: contain;
+
+    background: #f4f1eb;
+
+    border-radius: 20px;
+
+    padding: 8px;
+
+}
+
+
+/* GIFT CARDS */
+
+.gift-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+    margin: 25px 0;
+}
+
+.gift {
+
+    width: 180px;
+
+    background: #fff7e8;
+
+    padding: 25px 15px;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.gift:hover {
+
+    transform:
+        translateY(-8px)
+        rotate(1deg);
+}
+
+.gift-icon {
+    font-size: 45px;
+}
+
+
+/* MESSAGE BOX */
+
+.message-popup {
+
+    margin: 25px auto;
+
+    max-width: 500px;
+
+    padding: 20px;
+
+    background: #f8f3ea;
+
+    border-radius: 20px;
+
+    color: #555;
+
+    line-height: 1.7;
+
+    animation: popup 0.4s ease;
+}
+
+@keyframes popup {
+
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+
+
+/* FEELINGS */
+
+.feeling-buttons {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    margin: 25px 0;
+}
+
+
+/* FINAL PHOTO */
+
+.final-photo-box img {
+
+    width: 100%;
+
+    max-width: 500px;
+
+    max-height: 500px;
+
+    object-fit: contain;
+
+    background: #f4f1eb;
+
+    padding: 8px;
+
+    border-radius: 25px;
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .card {
+        padding: 30px 18px;
+    }
+
+    .siblings {
+        font-size: 55px;
+    }
+
+    .memory-box img {
+        height: 350px;
+    }
+
+    .gift {
+        width: 100%;
+    }
+
+}

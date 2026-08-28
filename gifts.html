@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Choose a Gift</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="page">
+
+        <div class="card">
+
+            <h1>Choose One 🎁</h1>
+
+            <p>
+                But you have to open all three!
+            </p>
+
+
+            <div class="gift-container">
+
+
+                <div class="gift"
+                     onclick="openGift('gift1')">
+
+                    <div class="gift-icon">
+                        🎁
+                    </div>
+
+                    <h3>A Small Thank You</h3>
+
+                </div>
+
+
+                <div class="gift"
+                     onclick="openGift('gift2')">
+
+                    <div class="gift-icon">
+                        🎁
+                    </div>
+
+                    <h3>A Funny Truth</h3>
+
+                </div>
+
+
+                <div class="gift"
+                     onclick="openGift('gift3')">
+
+                    <div class="gift-icon">
+                        🎁
+                    </div>
+
+                    <h3>Something Real</h3>
+
+                </div>
+
+            </div>
+
+
+            <div id="giftMessage"
+                 class="message-popup">
+
+                Click a gift above!
+
+            </div>
+
+
+            <button onclick="location.href='feelings.html'">
+
+                One More Page →
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
